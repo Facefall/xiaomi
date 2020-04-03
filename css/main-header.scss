@@ -26,6 +26,7 @@ $navSubHoveredTime:.2s;
 $ThemeColor:#ff6700;
 
 
+
 html,body{
   width: 100%;
   height: 100%;
@@ -40,7 +41,7 @@ header{
   width: 100%;
   height: $headerHeight;
   line-height: $headerLineHeight;
-  margin-bottom: 14px;
+  //margin-bottom: 14px;
   background-color: $headerBgc;
   color:$headerColor;
 }
@@ -86,26 +87,93 @@ $Section1Color:#333;
   width: inherit;
   align-items: center;
   justify-content: space-between;
+  //padding-bottom: 6px;
 }
 .section1 .logo img{
   width: 55px;
   height: 55px;
 }
-
-//.section1 > div{
-//  display: inline-block;
-//}
 .section1 .section1-nav1 .detail-list > li{
   float: left;
-  padding: 20px 10px;
   font-size: 16px;
   color:#333;
-  transition: .2s all;
+  padding: 12px 0 0 30px;
+  height: 100px;
+  line-height: 100px;
+}
+//.section1 .section1-nav1 .detail-list > li:hover{
+//
+//}
+
+.section1 .section1-nav1 .detail-list .hidden-detail-list{
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 144px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 146px;
+  padding-right: 146px;
+  padding-bottom: 20px;
+  height: 0;
+  background-color: #fff;
+
+  overflow: hidden;
+  transition: .2s  height;
+  justify-content: space-between;
+}
+.section1 .section1-nav1 .detail-list .hidden-detail-list .hidden-detail-list-wrap{
+  //width: ;
+  position: relative;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.section1 .section1-nav1 .detail-list .hidden-detail-list img{
+  width: 160px;
+  height: 110px;
+}
+.section1 .section1-nav1 .detail-list .hidden-detail-list .hidden-detail-list-wrap:after{
+  position: absolute;
+  display: block;
+  top: 70px;
+  right:-22px;
+  content: ' ';
+  width: 1px;
+  height: 70px;
+  background-color: #e0e0e0;
+}
+.section1 .section1-nav1 .detail-list .list-name{
+  padding: 12px 0 0 30px;
+
 }
 .section1 .section1-nav1 .detail-list > li:hover{
   cursor:pointer;
   color:$ThemeColor;
 }
+.section1 .section1-nav1 .detail-list li.detail-list-item:hover ul.hidden-detail-list {
+  height: 220px;
+  line-height: 26px;
+}
+//.section1 .section1-nav1 .detail-list > li:hover ul{
+//  height: 220px;
+//}
+//.section1 .section1-nav1 .detail-list > li:hover .hidden-detail-list-wrap{
+
+//}
+
+
+
+//.section1 .section1-nav1 .detail-list .hidden-detail-list li{
+//  position: relative;
+//}
+//.section1 .section1-nav1 .detail-list .hidden-detail-list li .hidden-detail-list-wrap{
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//}
+
+
 .section1 .section1-search{
   display: flex;
   align-items: center;
@@ -137,6 +205,15 @@ $Section1Color:#333;
   color: #616161;
   background-color: #fff;
   transition: .2s all;
+}
+.title,.price{
+  font-size: 12px;
+}
+.title{
+  color:#333;
+}
+.price{
+  color:$ThemeColor;
 }
 .section1 .section1-search > i.iconfont:before{
   padding: 13px;
