@@ -1,0 +1,93 @@
+$ThemeColor: #ff6700;
+
+.section2-category{
+  box-sizing: border-box;
+  width: auto;
+  height: 460px;
+  margin-top: 4px;
+  z-index: -10;
+  background: url("../img/swiper1.jpg") no-repeat center/cover;
+  overflow: hidden;
+  zoom: 1;
+  :after{
+    display: block;
+    content: '\20';
+    height: 0;
+    clear: both;
+
+  }
+  .category-wrap > ul{
+    position: relative;
+    width: 293px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    background-color: rgba(105,101,101,.6);
+    > li{
+      position: relative;
+      height: 42px;
+      line-height: 42px;
+      color:#fff;
+      font-size: 14px;
+      padding-left: 30px;
+      background-color: transparent;
+      transition: .05s linear all;
+      i{
+        //display: ;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        font-size: 20px;
+      }
+    }
+    > li:hover{
+      background-color: $ThemeColor;
+      .category-list-wrap{
+        //display: block;
+      }
+    }
+
+
+  }
+  .category-list-wrap{
+    display: none;
+    position: relative;
+    width: fit-content;
+    top: -460px;
+    left: 293px;
+    box-shadow: 0 8px 16px rgba(0,0,0,.18);
+    font-size: 0;
+    .category-list-items{
+      display: inline-flex;
+      max-width: 234px;
+      height: 460px;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      background-color: #fff;
+    }
+    .category-list-item{
+      display: block;
+      width: 265px;
+      height: fit-content;
+      padding: 16px 20px;
+      line-height: 40px;
+      img{
+        width: 40px;
+        height: 40px;
+        vertical-align: middle;
+        margin-right: 12px;
+      }
+      span{
+        width: 172px;
+        line-height: 40px;
+        font-size: 14px;
+        color: #333333;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+
+

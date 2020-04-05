@@ -5,36 +5,16 @@ html,body,ul,li,a,p,h1,h2,h3,h4,h5,h6,img,span,i,input,label,button{
 a{text-decoration: none;}
 ul{list-style: none;}
 
-$headerColor:#b0b0b0;
-$headerHeight:40px;
-$headerLineHeight:$headerHeight;
-$headerPaddingLeft:146px;
-$headerPaddingRight:146px;
-$headerBgc:#333;
-$headerHoverColor:#fff;
-
-$navColor:#333;
-$navCategoryListColor:  $headerHoverColor;
-
-$navSubColor:$headerHoverColor;
-$navSubColorOpacity:.7;
-
-$navSubHoveredOpacity:1;
-$navSubHoveredTime:.2s;
-
-
-$ThemeColor:#ff6700;
-
-
+@import './header.scss';
 
 html,body{
   width: 100%;
   height: 100%;
-  //overflow-x: hidden;
+  overflow-x: hidden;
   font-size: 12px;
 }
 body{
-
+  //height: 1000px;
 }
 header{
   display: flex;
@@ -48,30 +28,13 @@ header{
 a{
   color:$headerColor;
 }
-header .header-wrap{
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  box-sizing: content-box;
-  width: 100%;
-  padding-left:$headerPaddingLeft ;
-  padding-right:$headerPaddingLeft;
-}
-header li{
-  display: inline-block;
-  margin-right: 8px;
-}
-header .header-wrap a:hover{
-  color:$headerHoverColor;
-}
 
-//==================== header ====================
+
+
 
 //==================== section1 ====================
 
 $sectionHeaderHeight:100px;
-
-//padding: 26px 10px 38px;
 $Section1Color:#333;
 
 
@@ -111,22 +74,22 @@ $Section1Color:#333;
   left: 0;
   top: 144px;
   width: 100%;
+  line-height: 26px;
   box-sizing: border-box;
   padding-left: 146px;
   padding-right: 146px;
-  padding-bottom: 20px;
   height: 0;
   background-color: #fff;
-
   overflow: hidden;
   transition: .2s  height;
   justify-content: space-between;
+  z-index: 10;
 }
 .section1 .section1-nav1 .detail-list .hidden-detail-list .hidden-detail-list-wrap{
   //width: ;
   position: relative;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 50px;
 }
 .section1 .section1-nav1 .detail-list .hidden-detail-list img{
@@ -147,13 +110,14 @@ $Section1Color:#333;
   padding: 12px 0 0 30px;
 
 }
+
 .section1 .section1-nav1 .detail-list > li:hover{
   cursor:pointer;
   color:$ThemeColor;
 }
-.section1 .section1-nav1 .detail-list li.detail-list-item:hover ul.hidden-detail-list {
+.section1 .section1-nav1 .detail-list .detail-list-item:hover > ul.hidden-detail-list {
   height: 220px;
-  line-height: 26px;
+  border-top: 1px solid #e0e0e0;
 }
 //.section1 .section1-nav1 .detail-list > li:hover ul{
 //  height: 220px;

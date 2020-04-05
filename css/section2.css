@@ -1,0 +1,72 @@
+.section2-category {
+  box-sizing: border-box;
+  width: auto;
+  height: 460px;
+  margin-top: 4px;
+  z-index: -10;
+  background: url("../img/swiper1.jpg") no-repeat center/cover;
+  overflow: hidden;
+  zoom: 1; }
+  .section2-category :after {
+    display: block;
+    content: '\20';
+    height: 0;
+    clear: both; }
+  .section2-category .category-wrap > ul {
+    position: relative;
+    width: 293px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    background-color: rgba(105, 101, 101, 0.6); }
+    .section2-category .category-wrap > ul > li {
+      position: relative;
+      height: 42px;
+      line-height: 42px;
+      color: #fff;
+      font-size: 14px;
+      padding-left: 30px;
+      background-color: transparent;
+      transition: .05s linear all; }
+      .section2-category .category-wrap > ul > li i {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        font-size: 20px; }
+    .section2-category .category-wrap > ul > li:hover {
+      background-color: #ff6700; }
+  .section2-category .category-list-wrap {
+    display: none;
+    position: relative;
+    width: fit-content;
+    top: -460px;
+    left: 293px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+    font-size: 0; }
+    .section2-category .category-list-wrap .category-list-items {
+      display: inline-flex;
+      max-width: 234px;
+      height: 460px;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      background-color: #fff; }
+    .section2-category .category-list-wrap .category-list-item {
+      display: block;
+      width: 265px;
+      height: fit-content;
+      padding: 16px 20px;
+      line-height: 40px; }
+      .section2-category .category-list-wrap .category-list-item img {
+        width: 40px;
+        height: 40px;
+        vertical-align: middle;
+        margin-right: 12px; }
+      .section2-category .category-list-wrap .category-list-item span {
+        width: 172px;
+        line-height: 40px;
+        font-size: 14px;
+        color: #333333;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden; }
+
+/*# sourceMappingURL=section2.css.map */

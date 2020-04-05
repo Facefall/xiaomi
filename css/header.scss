@@ -1,0 +1,31 @@
+$headerColor:#b0b0b0;
+$headerHeight:40px;
+$headerLineHeight:$headerHeight;
+$headerPaddingLeft:146px;
+$headerPaddingRight:146px;
+$headerBgc:#333;
+$headerHoverColor:#fff;
+$navColor:#333;
+$navCategoryListColor:  $headerHoverColor;
+$navSubColor:$headerHoverColor;
+$navSubColorOpacity:.7;
+$navSubHoveredOpacity:1;
+$navSubHoveredTime:.2s;
+$ThemeColor:#ff6700;
+
+header .header-wrap{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  box-sizing: content-box;
+  width: 100%;
+  padding-left:$headerPaddingLeft ;
+  padding-right:$headerPaddingLeft;
+}
+header li{
+  display: inline-block;
+  margin-right: 8px;
+}
+header .header-wrap a:hover{
+  color:$headerHoverColor;
+}
